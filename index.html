@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Cumpleaños ✨</title>
+
+  <!-- Google Fonts: cursivas + elegantes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500;700&family=Parisienne&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============== FONDO DE PÉTALOS / CORAZONES ============== -->
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- ============== PANTALLA DEL SOBRE ============== -->
+  <section id="envelope-screen" class="envelope-screen">
+    <div class="envelope-stage">
+      <p class="envelope-hint">Toca el sobre para abrir tu sorpresa 💌</p>
+
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+
+        <!-- Carta dentro -->
+        <div class="letter">
+          <div class="letter-content">
+            <h2>Para ti 💗</h2>
+            <p>
+              Hay una pequeña sorpresa<br/>
+              esperándote dentro...
+            </p>
+            <span class="letter-seal">✿</span>
+          </div>
+        </div>
+
+        <div class="envelope-front"></div>
+        <div class="envelope-flap" id="envelopeFlap"></div>
+
+        <!-- Sello de cera -->
+        <div class="wax-seal">23</div>
+      </div>
+
+      <p class="envelope-sub">Un click… y empieza la magia ✨</p>
+    </div>
+  </section>
+
+
+  <!-- ============== CONTENIDO PRINCIPAL ============== -->
+  <main id="site" class="site hidden">
+
+    <!-- ====== HERO ====== -->
+    <header class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-content">
+        <p class="hero-pre">✦ 28 de abril ✦</p>
+        <h1 class="hero-title">Feliz Cumpleaños</h1>
+        <p class="hero-name">Mi Niña Linda</p>
+
+        <div class="hero-23">
+          <span>2</span><span>3</span>
+        </div>
+
+        <p class="hero-tag">veintitrés vueltas al sol llenas de luz ☀️</p>
+      </div>
+
+      <!-- Foto principal (reemplaza esta imagen luego) -->
+      <div class="hero-photo">
+        <img src="images/hero/hero.jpg" alt="Foto principal" onerror="this.style.display='none'">
+      </div>
+    </header>
+
+
+    <!-- ====== CARTA / MENSAJE ====== -->
+    <section class="section message-section">
+      <h2 class="section-title">Una carta para ti</h2>
+      <div class="paper">
+        <p class="paper-text">
+          Hoy cumples 23 años y quiero que sepas lo especial que eres.
+          Cada momento contigo es un regalo, tu sonrisa y alegria hacen que siempre 
+          sea un dia mejor. Eres una persona increíble, llena de luz y amor, y me siento muy afortunado de tenerte en mi vida.
+        </p>
+        <p class="paper-text">
+          Que este nuevo año esté lleno de aventuras, abrazos, risas,
+          metas cumplidas y muchísimo amor 💖. Te mereces lo mejor hoy y siempre.
+        </p>
+        <p class="paper-text paper-signature">
+          — Con todo mi cariño 💗
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ====== CAROUSEL DE FOTOS ====== -->
+    <section class="section carousel-section">
+      <h2 class="section-title">Nuestros momentos</h2>
+      <p class="section-sub">Desliza para revivirlos ✨</p>
+
+      <div class="carousel" id="carousel">
+        <button class="car-btn prev" aria-label="Anterior">‹</button>
+
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Reemplaza estas imágenes en images/carousel/ -->
+          <div class="slide">
+            <img src="images/carousel/1.jpg" alt="Recuerdo 1" onerror="this.parentNode.classList.add('placeholder')">
+            <p class="slide-caption">Aquel día perfecto 💫</p>
+          </div>
+          <div class="slide">
+            <img src="images/carousel/2.jpg" alt="Recuerdo 2" onerror="this.parentNode.classList.add('placeholder')">
+            <p class="slide-caption">Risas infinitas 🌷</p>
+          </div>
+          <div class="slide">
+            <img src="images/carousel/3.jpg" alt="Recuerdo 3" onerror="this.parentNode.classList.add('placeholder')">
+            <p class="slide-caption">Tú y tu brillo ✨</p>
+          </div>
+          <div class="slide">
+            <img src="images/carousel/4.jpg" alt="Recuerdo 4" onerror="this.parentNode.classList.add('placeholder')">
+            <p class="slide-caption">Momentos para guardar 💗</p>
+          </div>
+        </div>
+
+        <button class="car-btn next" aria-label="Siguiente">›</button>
+
+        <div class="dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+
+    <!-- ====== GALERÍA POLAROIDS ====== -->
+    <section class="section gallery-section">
+      <h2 class="section-title">Pequeños recuerdos</h2>
+      <p class="section-sub">Un mosaico de ti 🌸</p>
+
+      <div class="polaroid-grid">
+        <div class="polaroid r-1">
+          <img src="images/gallery/1.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Tu sonrisa</span>
+        </div>
+        <div class="polaroid r-2">
+          <img src="images/gallery/2.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Aventura</span>
+        </div>
+        <div class="polaroid r-3">
+          <img src="images/gallery/3.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Domingo feliz</span>
+        </div>
+        <div class="polaroid r-4">
+          <img src="images/gallery/4.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Mi favorita</span>
+        </div>
+        <div class="polaroid r-5">
+          <img src="images/gallery/5.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Pura magia</span>
+        </div>
+        <div class="polaroid r-6">
+          <img src="images/gallery/6.jpg" alt="" onerror="this.parentNode.classList.add('placeholder')">
+          <span>Para siempre</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== RAZONES / TARJETAS ====== -->
+    <section class="section reasons-section">
+      <h2 class="section-title">23 razones (de tantas)</h2>
+      <p class="section-sub">por las que eres increíble 💖</p>
+
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <span class="reason-num">01</span>
+          <p>Por tu sonrisa que lo cura todo.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">02</span>
+          <p>Por tu corazón enorme y noble.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">03</span>
+          <p>Por la forma en que miras al mundo.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">04</span>
+          <p>Por tu manera única de soñar en grande.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">05</span>
+          <p>Porque haces que todo sea más bonito.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">06</span>
+          <p>Por tu carisma y entusiasmo.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== MOMENTO FINAL ====== -->
+    <section class="section final-section">
+      <div class="cake">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-mid"></div>
+        <div class="cake-base"></div>
+      </div>
+
+      <h2 class="final-title">Pide un deseo… 🌠</h2>
+      <p class="final-text">
+        Que se cumpla todo lo que sueñes este año.<br/>
+        Te amooooooo mucho. 💗
+      </p>
+
+      <div class="signature">
+        — Con amor, <span>Johann</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho con 💗 para ti · 2026</p>
+    </footer>
+  </main>
+
+  <!-- Música opcional: descomenta y coloca un mp3 en /audio/song.mp3 -->
+  <!--
+  <audio id="bgMusic" src="audio/song.mp3" loop></audio>
+  -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
